@@ -1,0 +1,9 @@
+name: WispRandomBlocks
+version: 1.0-SNAPSHOT
+main: dev.yhdiamond.wisprandomblocks.WispRandomBlocks
+api-version: 1.16
+authors: [ YHDiamond ]
+commands:
+  wisprandomblocks:
+    usage: /wisprandomblocks <start/stop>
+    description: Starts and stops the Wisp Random Blocks challenge!

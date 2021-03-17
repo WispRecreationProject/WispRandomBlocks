@@ -1,5 +1,6 @@
 package dev.yhdiamond.wisprandomblocks;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -12,17 +13,14 @@ import org.bukkit.inventory.ItemStack;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 public class WalkListen implements Listener {
     WispRandomBlocks plugin;
     List<Material> blocks = Arrays.asList(Material.values());
     public WalkListen(WispRandomBlocks plugin) {
         this.plugin = plugin;
-        for (Material material : blocks) {
-            if (material.isItem() || material.isAir()) {
-                blocks.remove(material);
-            }
-        }
+        blocks = blocks.stream().filter((material) -> !(!material.isBlock() || material.isAir())).collect(Collectors.toList());
     }
 
     @EventHandler
