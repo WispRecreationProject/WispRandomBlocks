@@ -6,8 +6,11 @@
 
 # WispRandomBlocks
 
-This is the source code for the plugin that recreates the plugin in https://www.youtube.com/watch?v=06B8qLTpXK8 and https://www.youtube.com/watch?v=QeVLTXqVUxc. 
+This is the source code for the plugin that recreates the plugin in https://www.youtube.com/watch?v=06B8qLTpXK8 and https://www.youtube.com/watch?v=QeVLTXqVUxc, which sets the blocks under you to random blocks. 
 
 Spigot page: https://www.spigotmc.org/resources/wisp-random-block-challenge.90275/
+
 bStats page: https://bstats.org/plugin/bukkit/WispRandomBlocks/10697
+
 Discord: https://discord.gg/7T64AErgdU
+
